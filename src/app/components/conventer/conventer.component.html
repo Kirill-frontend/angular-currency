@@ -1,0 +1,18 @@
+<div class="container mx-[auto] w-[600px] mt-[50px] flex justify-between  items-center py-2">
+  <div class="flex">
+    <select id="countries"
+      class="bg-white-500 border border-gray-300 text-black text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500" [(ngModel)]="symb1" (ngModelChange)="changeHandleSymb()">      
+      <option *ngFor="let symb of symbols"  >{{ symb }}</option>
+    </select>
+    <input class="ml-[10px] w-[100px] border rounded border-gray-300 focus:ring-blue-500 focus:border-blue-500" type="number" min="0" placeholder="1" value="1"  [(ngModel)]="curr1" (ngModelChange)="changeHandleCurr()" >
+  </div>
+  <div class="flex">
+    <select id="countries"
+      class="bg-white-500 border border-gray-300 text-black text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500" [value]="symb2" [(ngModel)]="symb2" (ngModelChange)="changeHandleSymbSecond()" >      
+      <option *ngFor="let symb of symbols" >{{ symb }}</option>      
+    </select>
+    <input class="ml-[10px] w-[100px] border rounded border-gray-300 focus:ring-blue-500 focus:border-blue-500" type="number" min="0" placeholder="1" value="1"  [(ngModel)]="curr2" (ngModelChange)="changeHandleCurrSecond()">
+  </div>
+
+
+</div> 

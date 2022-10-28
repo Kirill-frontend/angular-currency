@@ -1,0 +1,9 @@
+<div class="bg-yellow-400 flex justify-between items-center absolute top-0 left-0 right-0 h-[50px] px-3">
+  <div class="header-item">
+    Конвертер валют
+  </div>
+  <div class="header-item">
+    <div class="header-item-currency"> {{ currencyUSD | number | currency }}  </div>
+    <div class="header-item-currency"> {{ currencyEUR | number | currency:'EUR' }}</div>
+  </div>
+</div>
